@@ -1,42 +1,64 @@
-/* Make body a vertical flex container */
 body {
+  background-color: #978080;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* full viewport height */
+  height: 100vh; 
   margin: 0;
 }
 
-/* Make main a horizontal flex container */
+
 main {
   display: flex;
   flex-direction: row;
-  flex: auto; /* lets main expand automatically */
+  flex: 1; 
+  min-height: 0;
 }
 
-/* Article takes 2/3 width */
+h1 {
+  margin: 0;
+  font-size: 36px;
+  color: #240303;
+}
+
+h6 {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  font-size: 60px;
+  color: #5e0303;
+}
+
+p {
+  margin : 15px 0;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #240303;
+}
+
 article {
   flex: 2;
   overflow-y: auto;
   padding: 20px;
 }
 
-/* Aside takes 1/3 width */
 aside {
   flex: 1;
   overflow-y: auto;
   padding: 20px;
 }
 
-/* Footer sticks to bottom */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: #420606;
+  color: #9bd30e;
+  width: 1280px;
   text-align: center;
   padding: 10px 0;
+
 }
 
 footer a {
-  color: #ffcc00;
+  background-color: #978080;
+  color: #5e0303;
   text-decoration: underline;
 }
+
 
